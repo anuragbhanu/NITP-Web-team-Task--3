@@ -11,6 +11,7 @@ import YoutubeGallary from "./Components/YoutubeGallary/YoutubeGallary";
 import Layout from "./layout";
 import "./index.css";
 
+// Creating a Brower Router to Navigate using Header
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
