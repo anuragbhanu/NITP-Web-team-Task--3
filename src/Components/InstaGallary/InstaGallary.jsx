@@ -5,6 +5,7 @@ import dp from "../../assets/Images/dp.jpg"
 
 const InstaGallary = () => {
   const [postsData, setData] = useState([]);
+  // Unique key for Instagram API
   const INSTAGRAM_KEY="IGQWRQZAXYxNDlKM2dRMHRlNFBXUEFIWEwtd2FqeGdRcmFLWGxiVXpiaG03Y18wUHRWN3Q2MHlzb2ZANTjVQYTlnV2RocEdSUElVWHI3aElZAdDJ3OWxVeDBfUHl1b0V4Q2dXcDVvY1BEMFFjRERRZAU41blM5eG11NWsZD"
 
   const url =`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,username,timestamp,permalink&access_token=${INSTAGRAM_KEY}`
@@ -12,6 +13,8 @@ const InstaGallary = () => {
     const response = await fetch(url
       ).then((e)=>e.json()).then(d=>setData(d.data))
   };
+
+  // Storing the json data dynamically in postsData Array
   useEffect(() => {
     fetchData();
   }, []); 
@@ -19,6 +22,7 @@ const InstaGallary = () => {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 mt-10 px-4 sm:px-6 sm:gap-4  ">
+      {/*  Using map to render each element of Posts */}
       {postsData.map((post) => <Card 
       key={post["id"]}
       dp={dp}
