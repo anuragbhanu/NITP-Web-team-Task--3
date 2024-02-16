@@ -20,7 +20,7 @@ This Repository is about the Integration of Social Media feeds into the website 
           "https://developers.facebook.com/".
 
 
-  YouTube Data API v3 :
+   - YouTube Data API v3 :
 	  - It returns all the details of the Videos of a Particular desired Playlist like VideoId , Thumbnail , PlaylistId ,
                	ChannelId , description and date of upload.
 	  - This API needs the unique ID of a particular Playlist as a Unique Key that can be Obtained by creating a project 		in the Google Cloud Console "https://console.cloud.google.com/" after some filtration according to the need.
