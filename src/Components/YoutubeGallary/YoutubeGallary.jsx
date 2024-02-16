@@ -17,7 +17,7 @@ const YoutubeGallary = () => {
 
   const videosData=videos
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 mt-10 px-4 sm:px-6 sm:gap-4  ">
+    <div className="grid grid-cols-1 sm:grid-cols-3 mt-10 px-4 sm:px-6 sm:gap-4  ">
       {videosData.map((video) => <Card 
       key={video["id"]}
       source="Youtube"
