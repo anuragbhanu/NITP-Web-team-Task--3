@@ -15,8 +15,8 @@ const Card = (props) => {
               </div>
             </div>
           </a>
-          {/* For Instagram Posts */}
-
+          
+        {/*Using Conditional Rendring to Render the Instagram Image or Video with <img/> <iframe/> repectively  */}
           {props.source == "Instagram" && <>
               {props.media_type != "VIDEO" ? (
                 <img src={props.media_url} />
@@ -36,7 +36,7 @@ const Card = (props) => {
               </>
           }
 
-          {/* For Youtube Videos */}
+          {/*Conditional Rendering For Youtube Videos */}
           {props.source == "Youtube" && (
             <div className="relative overflow-hidden pt-[56.25%]">
               <iframe
