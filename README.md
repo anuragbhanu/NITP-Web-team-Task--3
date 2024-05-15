@@ -1,9 +1,9 @@
 
-# NITP Web Team Task 3 (Round 1)
+# Social Media Feeds Integration
 
 This Repository is about the Integration of Social Media feeds into the website allowing users to see the posts , videos and photos shared by a Particular Organisation / Person.
 
-## Testing link : [https://webtask3.netlify.app/](https://webtask3.netlify.app/)
+## Testing link : [Live link]()
 
    - For Testing :-
       - Instagram Account Used : My Personal Id
